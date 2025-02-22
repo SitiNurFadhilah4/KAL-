@@ -1,11 +1,6 @@
-# Welcome to your Jupyter Book
+# Welcome to komputasi aljabar linier
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
-
-Check out the content pages bundled with this sample book to see more.
+"Selamat datang di mata kuliah Komputasi Aljabar Linier. Mata kuliah ini akan membahas konsep-konsep dasar aljabar linier serta penerapannya dalam dunia komputasi. Dengan memadukan teori dan praktik menggunakan perangkat lunak seperti Python dan MATLAB, kita akan mengeksplorasi bagaimana sistem persamaan linier, transformasi vektor, dan operasi matriks dapat digunakan untuk menyelesaikan berbagai permasalahan di dunia nyata. Mari kita mulai perjalanan akademik ini dengan semangat dan komitmen untuk belajar."
 
 ```{tableofcontents}
 ```
