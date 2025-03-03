@@ -57,11 +57,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
-    <link rel="prev" title="Markdown Files" href="markdown.html" />
+    <link rel="next" title="&lt;no title&gt;" href="markdown-notebooks.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,9 +182,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Sistem Persamaan Linier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -355,7 +355,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -371,6 +373,30 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-sistem-persamaan-linier">pengertian sistem persamaan linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian-spl">metode penyelesaian SPL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-tugas">penjelasan Tugas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-berhimpitam-mempunyai-banyak-solusi">jika berhimpitam mempunyai banyak solusi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#link-geogebra">link geogebra</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-tidak-berpotongan-tidak-ada-solusi">jika tidak berpotongan tidak ada solusi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">link geogebra</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-berpotongan-mempunyai-satu-penyelesaian-tunggal">jika berpotongan mempunyai satu penyelesaian tunggal.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">link geogebra</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -382,7 +408,184 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="sistem-persamaan-linier">
 <h1>Sistem Persamaan Linier<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h1>
+<section id="pengertian-sistem-persamaan-linier">
+<h2>pengertian sistem persamaan linier<a class="headerlink" href="#pengertian-sistem-persamaan-linier" title="Link to this heading">#</a></h2>
 <p>Sistem Persamaan Linier (SPL) adalah kumpulan dari dua atau lebih persamaan linier yang memiliki variabel yang sama dan harus diselesaikan secara bersamaan.</p>
+</section>
+<section id="metode-penyelesaian-spl">
+<h2>metode penyelesaian SPL<a class="headerlink" href="#metode-penyelesaian-spl" title="Link to this heading">#</a></h2>
+<p>a. metode substitusi</p>
+<p>cara penyelesaaian menggunakan metode substitusi:
+Pilih salah satu persamaan, kemudian nyatakan salah satu variabel dalam bentuk variabel lainnya.
+Substitusikan hasil tersebut ke persamaan lain.
+Selesaikan persamaan untuk menemukan nilai variabel yang tersisa.</p>
+<p>b. metode eliminasi</p>
+<p>cara penyelesaaian menggunakan metode eliminasi:
+Samakan salah satu koefisien variabel dengan mengalikan persamaan jika diperlukan.
+Kurangkan atau jumlahkan kedua persamaan untuk menghilangkan salah satu variabel.
+Selesaikan persamaan yang tersisa.</p>
+<p>c.eliminasi gauss</p>
+<p>Eliminasi Gauss bertujuan mengubah matriks augmented menjadi bentuk eselon baris atas (upper triangular form) menggunakan operasi baris elementer.
+cara penyelesaaian menggunakan metode eliminasi:
+Bentuk segitiga atas (eliminasi ke bawah),
+Ubah elemen-elemen di bawah diagonal utama menjadi nol menggunakan operasi baris.
+Substitusi mundur (back-substitution),
+Selesaikan nilai variabel dari persamaan yang sudah disederhanakan.</p>
+</section>
+<section id="penjelasan-tugas">
+<h2>penjelasan Tugas<a class="headerlink" href="#penjelasan-tugas" title="Link to this heading">#</a></h2>
+<section id="jika-berhimpitam-mempunyai-banyak-solusi">
+<h3>jika berhimpitam mempunyai banyak solusi<a class="headerlink" href="#jika-berhimpitam-mempunyai-banyak-solusi" title="Link to this heading">#</a></h3>
+<p>persamaan:
+<span class="math notranslate nohighlight">\(x+2y+3z=6
+2x+4y+6z=12
+3x+6y+9z=18.\)</span></p>
+<p>Langkah 1: Analisis Koefisien
+Perhatikan bahwa setiap persamaan merupakan kelipatan dari persamaan pertama:</p>
+<p>Baris kedua adalah 2 kali baris pertama.
+Baris ketiga adalah 3 kali baris pertama.
+Artinya, ketiga persamaan tersebut sebenarnya merepresentasikan persamaan yang sama. Oleh karena itu, sistem persamaan ini tidak memiliki solusi unik tetapi memiliki banyak solusi (tak hingga solusi).</p>
+<p>Langkah 2: Representasi dalam Matriks
+Sistem persamaan di atas dapat ditulis dalam bentuk matriks augmented:</p>
+<p>\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; \vert &amp; 6 \
+2 &amp; 4 &amp; 6 &amp; \vert &amp; 12 \
+3 &amp; 6 &amp; 9 &amp; \vert &amp; 18
+\end{bmatrix}</p>
+<p>Kita lakukan eliminasi baris:</p>
+<p>Baris kedua dikurangkan 2 kali baris pertama:</p>
+<p><span class="math notranslate nohighlight">\(R_2 \leftarrow R_2 - 2R_1\)</span></p>
+<p>Hasilnya:</p>
+<p>\begin{bmatrix}
+1 &amp; 0 &amp; 3 &amp; \vert &amp; 6 \
+2 &amp; 0 &amp; 6 &amp; \vert &amp; 0 \
+3 &amp; 0 &amp; 9 &amp; \vert &amp; 18
+\end{bmatrix}</p>
+<p>Baris ketiga dikurangkan 3 kali baris pertama:</p>
+<p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 - 3R_1\)</span></p>
+<p>Hasilnya:</p>
+<p>\begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; \vert &amp; 6 \
+2 &amp; 0 &amp; 0 &amp; \vert &amp; 0 \
+3 &amp; 0 &amp; 0 &amp; \vert &amp; 0
+\end{bmatrix}
+Langkah 3: Menentukan Solusi
+Dari matriks terakhir, kita hanya memiliki satu persamaan independen:</p>
+<p>x+2y+3z=6
+Karena ada tiga variabel tetapi hanya satu persamaan, maka kita bisa menyatakan solusi dalam bentuk parametrik:</p>
+<p>Biarkan y = t dan z =s sebagai parameter bebas.
+Dari persamaan pertama:
+x=6−2y−3z</p>
+<p>Substitusi y=t dan z=s:
+x=6−2t−3s</p>
+<p>Kesimpulan
+Solusi dari sistem persamaan ini dalam bentuk parametrik adalah:</p>
+<p>\begin{aligned}
+x &amp;= 6 - 2t - 3s \
+y &amp;= t \
+z &amp;= s
+\end{aligned}</p>
+<p>dengan t,s sebagai bilangan real bebas.
+Karena ada dua parameter bebas (t dan s),ini menunjukkan bahwa sistem memiliki tak hingga banyak solusi yang membentuk bidang dalam ruang tiga dimensi.</p>
+<section id="link-geogebra">
+<h4>link geogebra<a class="headerlink" href="#link-geogebra" title="Link to this heading">#</a></h4>
+<p><a class="reference external" href="https://www.geogebra.org/m/eh3mbqbz">https://www.geogebra.org/m/eh3mbqbz</a></p>
+</section>
+</section>
+<section id="jika-tidak-berpotongan-tidak-ada-solusi">
+<h3>jika tidak berpotongan tidak ada solusi<a class="headerlink" href="#jika-tidak-berpotongan-tidak-ada-solusi" title="Link to this heading">#</a></h3>
+<p>persamaan:
+x+y+z=1
+x+y+z=3
+x+y+z=5</p>
+<p>Langkah 1: Perhatikan Struktur Persamaan
+Semua persamaan memiliki bentuk yang sama, yaitu x+y+z , tetapi dengan hasil yang berbeda (1, 3, dan 5). Ini tidak mungkin terjadi karena satu ekspresi tidak dapat memiliki tiga nilai berbeda pada saat yang sama.</p>
+<p>Langkah 2: Kurangkan Persamaan
+Misalnya, kita kurangkan persamaan kedua dengan persamaan pertama:
+\begin{align*}
+(x + y + z) - (x + y + z) &amp;= 3 - 1 \
+0 &amp;= 2
+\end{align*}</p>
+<p>Ini merupakan kontradiksi (pernyataan yang salah).</p>
+<p>Lakukan hal yang sama untuk persamaan ketiga dengan persamaan pertama:
+\begin{align*}
+(x + y + z) - (x + y + z) &amp;= 5 - 1 \
+0 &amp;= 4
+\end{align*}</p>
+<p>Ini juga kontradiksi.</p>
+<p>Kesimpulan
+Sistem ini adalah inkonsisten, artinya tidak ada solusi.
+Dalam konteks geometri, ini menunjukkan bahwa tiga bidang yang direpresentasikan oleh persamaan tersebut sejajar tetapi tidak berpotongan, sehingga tidak ada titik perpotongan yang memenuhi semua persamaan sekaligus.</p>
+<section id="id1">
+<h4>link geogebra<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p><a class="reference external" href="https://www.geogebra.org/m/fmjtrzmn">https://www.geogebra.org/m/fmjtrzmn</a></p>
+</section>
+</section>
+<section id="jika-berpotongan-mempunyai-satu-penyelesaian-tunggal">
+<h3>jika berpotongan mempunyai satu penyelesaian tunggal.<a class="headerlink" href="#jika-berpotongan-mempunyai-satu-penyelesaian-tunggal" title="Link to this heading">#</a></h3>
+<p>persamaanya:
+<span class="math notranslate nohighlight">\(x+y+z=6
+2x-y+3z=14
+3x+2y-z=2\)</span></p>
+<p>kita bisa menggunakan metode eliminasi atau substitusi. Berikut langkah-langkah penyelesaiannya:</p>
+<p>Langkah 1: Eliminasi Salah Satu Variabel
+Kita akan menghilangkan salah satu variabel, misalnya y.
+Eliminas y dari Persamaan (1) dan (3)
+Menjumlahkan (1) dan (3):</p>
+<p><span class="math notranslate nohighlight">\((x + y + z) + (3x + 2y - z) = 6 + 2\)</span></p>
+<p><span class="math notranslate nohighlight">\(4x + 3y = 8 \quad \text{(Persamaan A)}\)</span>
+Eliminasi y dari Persamaan (2) dan (3)
+Mengalikan Persamaan (1) dengan 2 agar y sejajar dengan Persamaan (2):
+<span class="math notranslate nohighlight">\(2(x + y + z) = 2(6)\)</span></p>
+<p><span class="math notranslate nohighlight">\(2x + 2y + 2z = 12\)</span>
+Lalu kita kurangkan dari Persamaan (2):</p>
+<p><span class="math notranslate nohighlight">\((2x - y + 3z) - (2x + 2y + 2z) = 14 - 12\)</span>
+<span class="math notranslate nohighlight">\(-3y + z = 2 \quad \text{(Persamaan B)}\)</span></p>
+<p>Langkah 2: Substitusi dan Eliminasi Lanjutan
+Kita punya sistem:</p>
+<p><span class="math notranslate nohighlight">\(4x + 3y = 8\)</span></p>
+<p><span class="math notranslate nohighlight">\(-3y + z = 2\)</span></p>
+<p>Dari Persamaan B:</p>
+<p><span class="math notranslate nohighlight">\(z = 3y + 2\)</span></p>
+<p>Substitusikan ( z ) ke Persamaan (1):</p>
+<p><span class="math notranslate nohighlight">\(x + y + (3y + 2) = 6\)</span></p>
+<p><span class="math notranslate nohighlight">\(x + 4y = 4 \quad \text{(Persamaan C)}\)</span></p>
+<p>Substitusikan ( z = 3y + 2 ) ke Persamaan (3):</p>
+<p><span class="math notranslate nohighlight">\(3x + 2y - (3y + 2) = 2\)</span>
+<span class="math notranslate nohighlight">\(3x + 2y - 3y - 2 = 2\)</span></p>
+<p><span class="math notranslate nohighlight">\(3x - y = 4 \quad \text{(Persamaan D)}\)</span></p>
+<p>Langkah 3: Menyelesaikan Sistem Dua Variabel</p>
+<p>Kita punya:</p>
+<p><span class="math notranslate nohighlight">\(x + 4y = 4\)</span></p>
+<p><span class="math notranslate nohighlight">\(3x - y = 4\)</span></p>
+<p>Eliminasi ( x ) dengan mengalikan Persamaan C dengan 3:</p>
+<p><span class="math notranslate nohighlight">\(3(x + 4y) = 3(4)\)</span></p>
+<p><span class="math notranslate nohighlight">\(3x + 12y = 12\)</span>
+Kurangkan dari Persamaan D:</p>
+<p><span class="math notranslate nohighlight">\((3x + 12y) - (3x - y) = 12 - 4\)</span></p>
+<p><span class="math notranslate nohighlight">\(13y = 8\)</span></p>
+<p><span class="math notranslate nohighlight">\(y = \frac{8}{13}\)</span></p>
+<p>Substitusikan ( y ) ke Persamaan C:</p>
+<p><span class="math notranslate nohighlight">\(x + 4 \left(\frac{8}{13}\right) = 4\)</span></p>
+<p><span class="math notranslate nohighlight">\(x + \frac{32}{13} = 4\)</span>
+<span class="math notranslate nohighlight">\(x = 4 - \frac{32}{13}\)</span></p>
+<p><span class="math notranslate nohighlight">\(x = \frac{52}{13} - \frac{32}{13}\)</span></p>
+<p><span class="math notranslate nohighlight">\(x = \frac{20}{13}\)</span></p>
+<p>Substitusikan <span class="math notranslate nohighlight">\(( y = \frac{8}{13} \)\)</span> ke Persamaan B:</p>
+<p><span class="math notranslate nohighlight">\(z = 3\left(\frac{8}{13}\right) + 2\)</span>
+<span class="math notranslate nohighlight">\(z = \frac{24}{13} + 2\)</span></p>
+<p><span class="math notranslate nohighlight">\(z = \frac{24}{13} + \frac{26}{13}\)</span></p>
+<p><span class="math notranslate nohighlight">\(z = \frac{50}{13}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\textbf{Jawaban Akhir}\)</span></p>
+<p><span class="math notranslate nohighlight">\((x, y, z) = \left( \frac{20}{13}, \frac{8}{13}, \frac{50}{13} \right)\)</span></p>
+<p>Jadi, solusi dari sistem persamaan ini adalah:</p>
+<p><span class="math notranslate nohighlight">\(x = \frac{20}{13}, \quad y = \frac{8}{13}, \quad z = \frac{50}{13}\)</span></p>
+<section id="id2">
+<h4>link geogebra<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<p><a class="reference external" href="https://www.geogebra.org/m/vmk5kgdf">https://www.geogebra.org/m/vmk5kgdf</a></p>
+</section>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -421,7 +624,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Markdown Files</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
       </div>
     </a>
     <a class="right-next"
@@ -429,7 +632,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -439,6 +642,37 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-sistem-persamaan-linier">pengertian sistem persamaan linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian-spl">metode penyelesaian SPL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-tugas">penjelasan Tugas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-berhimpitam-mempunyai-banyak-solusi">jika berhimpitam mempunyai banyak solusi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#link-geogebra">link geogebra</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-tidak-berpotongan-tidak-ada-solusi">jika tidak berpotongan tidak ada solusi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">link geogebra</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-berpotongan-mempunyai-satu-penyelesaian-tunggal">jika berpotongan mempunyai satu penyelesaian tunggal.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">link geogebra</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
