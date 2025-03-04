@@ -447,28 +447,28 @@ Baris ketiga adalah 3 kali baris pertama.
 Artinya, ketiga persamaan tersebut sebenarnya merepresentasikan persamaan yang sama. Oleh karena itu, sistem persamaan ini tidak memiliki solusi unik tetapi memiliki banyak solusi (tak hingga solusi).</p>
 <p>Langkah 2: Representasi dalam Matriks
 Sistem persamaan di atas dapat ditulis dalam bentuk matriks augmented:</p>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; 3 &amp; \vert &amp; 6 \
-2 &amp; 4 &amp; 6 &amp; \vert &amp; 12 \
-3 &amp; 6 &amp; 9 &amp; \vert &amp; 18
-\end{bmatrix}</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix} 
+1 &amp; 2 &amp; 3 &amp; \vert &amp; 6 \\ 
+2 &amp; 4 &amp; 6 &amp; \vert &amp; 12 \\ 
+3 &amp; 6 &amp; 9 &amp; \vert &amp; 18 
+\end{bmatrix}\)</span></p>
 <p>Kita lakukan eliminasi baris:</p>
 <p>Baris kedua dikurangkan 2 kali baris pertama:</p>
 <p><span class="math notranslate nohighlight">\(R_2 \leftarrow R_2 - 2R_1\)</span></p>
 <p>Hasilnya:</p>
-<p>\begin{bmatrix}
-1 &amp; 0 &amp; 3 &amp; \vert &amp; 6 \
-2 &amp; 0 &amp; 6 &amp; \vert &amp; 0 \
-3 &amp; 0 &amp; 9 &amp; \vert &amp; 18
-\end{bmatrix}</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix} 
+1 &amp; 0 &amp; 3 &amp; \vert &amp; 6 \\ 
+2 &amp; 0 &amp; 6 &amp; \vert &amp; 0 \\ 
+3 &amp; 0 &amp; 9 &amp; \vert &amp; 18 
+\end{bmatrix}\)</span></p>
 <p>Baris ketiga dikurangkan 3 kali baris pertama:</p>
 <p><span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 - 3R_1\)</span></p>
 <p>Hasilnya:</p>
-<p>\begin{bmatrix}
-1 &amp; 0 &amp; 0 &amp; \vert &amp; 6 \
-2 &amp; 0 &amp; 0 &amp; \vert &amp; 0 \
-3 &amp; 0 &amp; 0 &amp; \vert &amp; 0
-\end{bmatrix}
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix} 
+1 &amp; 0 &amp; 0 &amp; \vert &amp; 6 \\ 
+2 &amp; 0 &amp; 0 &amp; \vert &amp; 0 \\ 
+3 &amp; 0 &amp; 0 &amp; \vert &amp; 0 
+\end{bmatrix}\)</span>
 Langkah 3: Menentukan Solusi
 Dari matriks terakhir, kita hanya memiliki satu persamaan independen:</p>
 <p>x+2y+3z=6
@@ -480,11 +480,11 @@ x=6−2y−3z</p>
 x=6−2t−3s</p>
 <p>Kesimpulan
 Solusi dari sistem persamaan ini dalam bentuk parametrik adalah:</p>
-<p>\begin{aligned}
-x &amp;= 6 - 2t - 3s \
-y &amp;= t \
+<p><span class="math notranslate nohighlight">\(\begin{aligned}
+x &amp;= 6 - 2t - 3s \\
+y &amp;= t \\
 z &amp;= s
-\end{aligned}</p>
+\end{aligned}\)</span></p>
 <p>dengan t,s sebagai bilangan real bebas.
 Karena ada dua parameter bebas (t dan s),ini menunjukkan bahwa sistem memiliki tak hingga banyak solusi yang membentuk bidang dalam ruang tiga dimensi.</p>
 <section id="link-geogebra">
@@ -502,16 +502,16 @@ x+y+z=5</p>
 Semua persamaan memiliki bentuk yang sama, yaitu x+y+z , tetapi dengan hasil yang berbeda (1, 3, dan 5). Ini tidak mungkin terjadi karena satu ekspresi tidak dapat memiliki tiga nilai berbeda pada saat yang sama.</p>
 <p>Langkah 2: Kurangkan Persamaan
 Misalnya, kita kurangkan persamaan kedua dengan persamaan pertama:
-\begin{align*}
-(x + y + z) - (x + y + z) &amp;= 3 - 1 \
+<span class="math notranslate nohighlight">\(\begin{align*}
+(x + y + z) - (x + y + z) &amp;= 3 - 1 \\
 0 &amp;= 2
-\end{align*}</p>
+\end{align*}\)</span></p>
 <p>Ini merupakan kontradiksi (pernyataan yang salah).</p>
 <p>Lakukan hal yang sama untuk persamaan ketiga dengan persamaan pertama:
-\begin{align*}
-(x + y + z) - (x + y + z) &amp;= 5 - 1 \
+<span class="math notranslate nohighlight">\(\begin{align*}
+(x + y + z) - (x + y + z) &amp;= 5 - 1 \\
 0 &amp;= 4
-\end{align*}</p>
+\end{align*}\)</span></p>
 <p>Ini juga kontradiksi.</p>
 <p>Kesimpulan
 Sistem ini adalah inkonsisten, artinya tidak ada solusi.
