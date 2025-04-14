@@ -184,6 +184,8 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Sistem Persamaan Linier</a></li>
 
+
+
 </ul>
 
     </div>
@@ -400,6 +402,26 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-3-persamaan-dengan-3-variabel-dengan-hasil-1-0-0">Tugas 3 Persamaan dengan 3 Variabel dengan Hasil 1,0,0</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-matriks">Transformasi Matriks</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Transformasi Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-perkalian-matriks-vektor">a.  Perkalian Matriks-Vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-transformasi-dasar">b. Transformasi Dasar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-komposisi-transformasi">c. Komposisi Transformasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-latihan-exercises">d. Latihan (Exercises)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban-dari-soal-halaman-239-nomor-1-2-5-dan-6">jawaban dari soal halaman 239 nomor 1,2,5 dan 6</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">jawaban</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-1">Nomor 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-2">Nomor 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-5">Nomor 5:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-6">Nomor 6:</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -725,6 +747,154 @@ Hasilnya:
 \end{bmatrix}\)</span></p>
 <p>Karena angka <span class="math notranslate nohighlight">\(-1.67 \times 10^{-16}\)</span> sangat kecil (hampir nol), maka hasilnya benar-benar (1,0,0).</p>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="transformasi-matriks">
+<h1>Transformasi Matriks<a class="headerlink" href="#transformasi-matriks" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2>Transformasi Matriks<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>Transformasi matriks adalah fungsi yang mengubah vektor dari satu ruang vektor ke ruang vektor lain menggunakan perkalian matriks.</p>
+<p>Misalnya, jika 𝐴 adalah matriks 𝑚 × 𝑛 dan <span class="math notranslate nohighlight">\(\vec{x} ∈ 𝑅^𝑛\)</span> maka transformasi 𝑇 didefinisikan sebagai:</p>
+<p><span class="math notranslate nohighlight">\(T(\vec{x}) = A\vec{x}\)</span></p>
+<p>Outputnya adalah vektor <span class="math notranslate nohighlight">\(\vec{y}∈ 𝑅^𝑚.\)</span>
+Transformasi seperti ini disebut transformasi linear, dan merupakan bagian penting dalam pemetaan antara ruang vektor.</p>
+<section id="a-perkalian-matriks-vektor">
+<h3>a.  Perkalian Matriks-Vektor<a class="headerlink" href="#a-perkalian-matriks-vektor" title="Link to this heading">#</a></h3>
+<p>Fokus pada vektor 2D <span class="math notranslate nohighlight">\((𝑅^2)\)</span> untuk mempermudah visualisasi.
+Matriks 2 × 2 bisa digunakan untuk mengubah vektor 2D dan tetap menghasilkan vektor 2D.</p>
+<p>Contoh matriks:
+<span class="math notranslate nohighlight">\(A = \begin{bmatrix} 1 &amp; 4 \\ 2 &amp; 3 \end{bmatrix}\)</span></p>
+<p>jika <span class="math notranslate nohighlight">\(\vec{x}\)</span> = <span class="math notranslate nohighlight">\(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\)</span> maka:</p>
+<p><span class="math notranslate nohighlight">\(A\vec{x} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}\)</span></p>
+<p>Visualisasi digunakan untuk menunjukkan bagaimana vektor sebelum dan sesudah transformasi berubah pada bidang kartesius.</p>
+</section>
+<section id="b-transformasi-dasar">
+<h3>b. Transformasi Dasar<a class="headerlink" href="#b-transformasi-dasar" title="Link to this heading">#</a></h3>
+<p>Beberapa contoh transformasi umum yang bisa direpresentasikan oleh matriks:</p>
+<p>Refleksi terhadap sumbu-x: <span class="math notranslate nohighlight">\(\begin{bmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix}\)</span></p>
+<p>Refleksi terhadap sumbu-y: <span class="math notranslate nohighlight">\(\begin{bmatrix} -1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix}\)</span></p>
+<p>Rotasi berlawanan arah jarum jam sebesar 𝜃 : <span class="math notranslate nohighlight">\(\begin{bmatrix} \cos \theta &amp; -\sin \theta \\ \sin \theta &amp; \cos \theta \end{bmatrix}\)</span></p>
+<p>Peregangan horizontal atau vertikal:</p>
+<p>Horizontal: <span class="math notranslate nohighlight">\(\begin{bmatrix}
+k &amp; 0 \\
+0 &amp; 1
+\end{bmatrix}\)</span> ,
+Vertikal: <span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; k
+\end{bmatrix}\)</span></p>
+</section>
+<section id="c-komposisi-transformasi">
+<h3>c. Komposisi Transformasi<a class="headerlink" href="#c-komposisi-transformasi" title="Link to this heading">#</a></h3>
+<p>Transformasi dapat dikombinasikan dengan mengalikan matriks secara berurutan.
+Misal, transformasi T1 diikuti T2:
+<span class="math notranslate nohighlight">\(A = A_2 \cdot A_1\)</span></p>
+<p>Maka transformasi total <span class="math notranslate nohighlight">\(T(\vec{x}) = A_2 (A_1 \vec{x})\)</span></p>
+</section>
+<section id="d-latihan-exercises">
+<h3>d. Latihan (Exercises)<a class="headerlink" href="#d-latihan-exercises" title="Link to this heading">#</a></h3>
+<p>Latihan diberikan berupa sketsa transformasi dan identifikasi matriks yang melakukannya. Contoh tugas:</p>
+<p>Temukan matriks yang mengubah bujur sangkar satuan dengan rotasi atau refleksi tertentu.
+Contoh transformasi majemuk:</p>
+<ol class="arabic simple">
+<li><p>Refleksi horizontal diikuti refleksi vertikal.</p></li>
+<li><p>Peregangan horizontal lalu refleksi terhadap garis 𝑦=𝑥</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="jawaban-dari-soal-halaman-239-nomor-1-2-5-dan-6">
+<h1>jawaban dari soal halaman 239 nomor 1,2,5 dan 6<a class="headerlink" href="#jawaban-dari-soal-halaman-239-nomor-1-2-5-dan-6" title="Link to this heading">#</a></h1>
+<section id="jawaban">
+<h2>jawaban<a class="headerlink" href="#jawaban" title="Link to this heading">#</a></h2>
+<section id="nomor-1">
+<h3>Nomor 1:<a class="headerlink" href="#nomor-1" title="Link to this heading">#</a></h3>
+<p>diketahui: <span class="math notranslate nohighlight">\(A = \begin{bmatrix}
+1 &amp; -1 \\
+2 &amp; 3
+\end{bmatrix}, \quad
+\vec{x} = \begin{bmatrix}
+1 \\
+1
+\end{bmatrix}, \quad
+\vec{y} = \begin{bmatrix}
+-1 \\
+2
+\end{bmatrix}\)</span></p>
+<p>Hitung:</p>
+<p>A·x:</p>
+<p><span class="math notranslate nohighlight">\(A \cdot \vec{x}\)</span> =
+<span class="math notranslate nohighlight">\(\begin{bmatrix}
+1×1 + (-1)×1 \\
+2×1 + 3×1
+\end{bmatrix}\)</span>
+= <span class="math notranslate nohighlight">\(\begin{bmatrix}
+0 \\
+5
+\end{bmatrix}\)</span></p>
+<p>A·y:</p>
+<p><span class="math notranslate nohighlight">\(A \cdot \vec{y}\)</span> =
+<span class="math notranslate nohighlight">\(\begin{bmatrix}
+1×(-1) + (-1)×2 \\
+2×(-1) + 3×2
+\end{bmatrix}\)</span>
+= <span class="math notranslate nohighlight">\(\begin{bmatrix}
+-3 \\
+4
+\end{bmatrix}\)</span></p>
+</section>
+<section id="nomor-2">
+<h3>Nomor 2:<a class="headerlink" href="#nomor-2" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(A =
+\begin{bmatrix}
+2 &amp; 0 \\
+-1 &amp; 3
+\end{bmatrix}\)</span></p>
+<p>A·x:</p>
+<p><span class="math notranslate nohighlight">\( A \cdot \vec{x}\)</span> =
+<span class="math notranslate nohighlight">\(\begin{bmatrix}
+2×1 + 0×1 \\
+-1×1 + 3×1
+\end{bmatrix}\)</span>
+=<span class="math notranslate nohighlight">\(\begin{bmatrix}
+2 \\
+2
+\end{bmatrix}\)</span></p>
+<p>A·y:</p>
+<p><span class="math notranslate nohighlight">\(A \cdot \vec{y}\)</span> =
+<span class="math notranslate nohighlight">\(\begin{bmatrix}
+2×(-1) + 0×2 \\
+-1×(-1) + 3×2
+\end{bmatrix}\)</span>
+=<span class="math notranslate nohighlight">\(\begin{bmatrix}
+-2 \\
+7
+\end{bmatrix}\)</span></p>
+</section>
+<section id="nomor-5">
+<h3>Nomor 5:<a class="headerlink" href="#nomor-5" title="Link to this heading">#</a></h3>
+<p>Gambar menunjukkan transformasi unit square.</p>
+<p>Transformasi vektor basis:</p>
+<p>e₁ = [1; 0] berubah menjadi [1; 1]</p>
+<p>e₂ = [0; 1] berubah menjadi [0; 1]</p>
+<p>Maka matriks A adalah: <span class="math notranslate nohighlight">\(A =
+\begin{bmatrix}
+1 &amp; 0 \\
+1 &amp; 1
+\end{bmatrix}\)</span></p>
+</section>
+<section id="nomor-6">
+<h3>Nomor 6:<a class="headerlink" href="#nomor-6" title="Link to this heading">#</a></h3>
+<p>Transformasi menunjukkan refleksi diagonal (tukar posisi x dan y).</p>
+<p>e₁ = [1; 0] menjadi [0; 1]</p>
+<p>e₂ = [0; 1] menjadi [1; 0]</p>
+<p>Maka matriks A adalah:
+<span class="math notranslate nohighlight">\(A =
+\begin{bmatrix}
+0 &amp; 1 \\
+1 &amp; 0
+\end{bmatrix}\)</span></p>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -811,6 +981,26 @@ Hasilnya:
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-3-persamaan-dengan-3-variabel-dengan-hasil-1-0-0">Tugas 3 Persamaan dengan 3 Variabel dengan Hasil 1,0,0</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-matriks">Transformasi Matriks</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Transformasi Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-perkalian-matriks-vektor">a.  Perkalian Matriks-Vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-transformasi-dasar">b. Transformasi Dasar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-komposisi-transformasi">c. Komposisi Transformasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-latihan-exercises">d. Latihan (Exercises)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban-dari-soal-halaman-239-nomor-1-2-5-dan-6">jawaban dari soal halaman 239 nomor 1,2,5 dan 6</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">jawaban</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-1">Nomor 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-2">Nomor 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-5">Nomor 5:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-6">Nomor 6:</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
   </nav></div>
