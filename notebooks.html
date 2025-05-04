@@ -186,6 +186,8 @@
 
 
 
+
+
 </ul>
 
     </div>
@@ -423,6 +425,8 @@ document.write(`
 </li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-1-membuktikan-t-v-1-v-2-v-1-v-2-v-1-adalah-transformasi-linier">tugas 1 membuktikan <span class="math notranslate nohighlight">\(T(v_1, v_2) = (v_1 + v_2, v_1)\)</span> adalah transformasi linier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-2-membuatuat-2-contoh-titik-masing-masing-dari-gambar-matrik-reflection">Tugas 2 membuatuat 2 contoh titik masing-masing dari gambar matrik reflection</a></li>
 </ul>
 
             </nav>
@@ -912,6 +916,101 @@ Contoh transformasi majemuk:</p>
 </section>
 </section>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="tugas-1-membuktikan-t-v-1-v-2-v-1-v-2-v-1-adalah-transformasi-linier">
+<h1>tugas 1 membuktikan <span class="math notranslate nohighlight">\(T(v_1, v_2) = (v_1 + v_2, v_1)\)</span> adalah transformasi linier<a class="headerlink" href="#tugas-1-membuktikan-t-v-1-v-2-v-1-v-2-v-1-adalah-transformasi-linier" title="Link to this heading">#</a></h1>
+<p>Untuk membuktikan bahwa transformasi <span class="math notranslate nohighlight">\(T(v_1, v_2) = (v_1 + v_2, v_1)\)</span> adalah transformasi linier, kita harus menunjukkan bahwa:</p>
+<ol class="arabic simple">
+<li><p>Penjumlahan vektor dipertahankan: <span class="math notranslate nohighlight">\(T(u+v)=T(u)+T(v)\)</span></p></li>
+<li><p>Perkalian skalar dipertahankan: <span class="math notranslate nohighlight">\(T(c⋅v)=c⋅T(v)\)</span></p></li>
+</ol>
+<p>Misalkan: <span class="math notranslate nohighlight">\(u = (u_1, u_2),\quad v = (v_1, v_2),\quad c \in \mathbb{R}\)</span></p>
+<ol class="arabic simple">
+<li><p>Cek Penjumlahan:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(T(u + v) = T((u_1 + v_1, u_2 + v_2)) = ((u_1 + v_1) + (u_2 + v_2),\ u_1 + v_1)\)</span></p>
+<p><span class="math notranslate nohighlight">\(= (u_1 + u_2 + v_1 + v_2,\ u_1 + v_1)\)</span></p>
+<p>Sementara:</p>
+<p><span class="math notranslate nohighlight">\(T(u) = (u_1 + u_2,\ u_1),\quad T(v) = (v_1 + v_2,\ v_1)\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(u) + T(v) = (u_1 + u_2 + v_1 + v_2,\ u_1 + v_1)\)</span></p>
+<p>Sama, jadi penjumlahan dipertahankan.</p>
+<ol class="arabic simple" start="2">
+<li><p>Cek Perkalian Skalar:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(T(c \cdot v) = T((cv_1, cv_2)) = (cv_1 + cv_2,\ cv_1) = c(v_1 + v_2,\ v_1)\)</span></p>
+<p><span class="math notranslate nohighlight">\(= c \cdot T(v)\)</span></p>
+<p>Sama, jadi perkalian skalar juga dipertahankan.</p>
+<p>Karena kedua sifat dipenuhi, maka:</p>
+<p><span class="math notranslate nohighlight">\(T(v_1, v_2) = (v_1 + v_2,\ v_1)\)</span>
+adalah transformasi linier.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tugas-2-membuatuat-2-contoh-titik-masing-masing-dari-gambar-matrik-reflection">
+<h1>Tugas 2 membuatuat 2 contoh titik masing-masing dari gambar matrik reflection<a class="headerlink" href="#tugas-2-membuatuat-2-contoh-titik-masing-masing-dari-gambar-matrik-reflection" title="Link to this heading">#</a></h1>
+<ol class="arabic simple">
+<li><p>Refleksi terhadap sumbu x:</p></li>
+</ol>
+<p>Matriks:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; -1
+\end{bmatrix}\)</span></p>
+<p>Contoh Titik:</p>
+<p><span class="math notranslate nohighlight">\(A(2, 3):\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(2,3) = \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix} \begin{bmatrix} 2 \\ 3 \end{bmatrix} = \begin{bmatrix} 2 \\ -3 \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(B(-1, 4):\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(-1,4) = \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix} \begin{bmatrix} -1 \\ 4 \end{bmatrix} = \begin{bmatrix} -1 \\ -4 \end{bmatrix}\)</span></p>
+<ol class="arabic simple" start="2">
+<li><p>Refleksi terhadap sumbu y</p></li>
+</ol>
+<p>Matriks:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+-1 &amp; 0 \\
+0 &amp; 1
+\end{bmatrix}\)</span></p>
+<p>Contoh Titik:</p>
+<p><span class="math notranslate nohighlight">\(A(3, -2):\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(3,-2) = \begin{bmatrix} -1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix} \begin{bmatrix} 3 \\ -2 \end{bmatrix} = \begin{bmatrix} -3 \\ -2 \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(B(5, 1):\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(5,1) = \begin{bmatrix} -1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix} \begin{bmatrix} 5 \\ 1 \end{bmatrix} = \begin{bmatrix} -5 \\ 1 \end{bmatrix}\)</span></p>
+<ol class="arabic simple" start="3">
+<li><p>Refleksi terhadap garis y = x</p></li>
+</ol>
+<p>Matriks:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+0 &amp; 1 \\
+1 &amp; 0
+\end{bmatrix}\)</span></p>
+<p>Contoh Titik:</p>
+<p><span class="math notranslate nohighlight">\(A(1, 4):\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(1,4) = \begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix} \begin{bmatrix} 1 \\ 4 \end{bmatrix} = \begin{bmatrix} 4 \\ 1 \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(B(3, -2):\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(3,-2) = \begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix} \begin{bmatrix} 3 \\ -2 \end{bmatrix} = \begin{bmatrix} -2 \\ 3 \end{bmatrix}\)</span></p>
+<ol class="arabic simple" start="4">
+<li><p>Refleksi terhadap garis y = -x</p></li>
+</ol>
+<p>Matriks:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+0 &amp; -1 \\
+-1 &amp; 0
+\end{bmatrix}\)</span></p>
+<p>Contoh Titik:</p>
+<p><span class="math notranslate nohighlight">\(A(2, 5):\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(2,5) = \begin{bmatrix} 0 &amp; -1 \\ -1 &amp; 0 \end{bmatrix} \begin{bmatrix} 2 \\ 5 \end{bmatrix} = \begin{bmatrix} -5 \\ -2 \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(B(-3, 1):\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(-3,1) = \begin{bmatrix} 0 &amp; -1 \\ -1 &amp; 0 \end{bmatrix} \begin{bmatrix} -3 \\ 1 \end{bmatrix} = \begin{bmatrix} -1 \\ 3 \end{bmatrix}\)</span></p>
+<ol class="arabic simple" start="5">
+<li><p>Refleksi terhadap titik asal (origin)</p></li>
+</ol>
+<p>Matriks:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+-1 &amp; 0 \\
+0 &amp; -1
+\end{bmatrix}\)</span></p>
+<p>Contoh Titik:</p>
+<p><span class="math notranslate nohighlight">\(A(4, 2):\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(4,2) = \begin{bmatrix} -1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix} \begin{bmatrix} 4 \\ 2 \end{bmatrix} = \begin{bmatrix} -4 \\ -2 \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(B(-3, -5):\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(-3,-5) = \begin{bmatrix} -1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix} \begin{bmatrix} -3 \\ -5 \end{bmatrix} = \begin{bmatrix} 3 \\ 5 \end{bmatrix}\)</span></p>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1019,6 +1118,8 @@ Contoh transformasi majemuk:</p>
 </li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-1-membuktikan-t-v-1-v-2-v-1-v-2-v-1-adalah-transformasi-linier">tugas 1 membuktikan <span class="math notranslate nohighlight">\(T(v_1, v_2) = (v_1 + v_2, v_1)\)</span> adalah transformasi linier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-2-membuatuat-2-contoh-titik-masing-masing-dari-gambar-matrik-reflection">Tugas 2 membuatuat 2 contoh titik masing-masing dari gambar matrik reflection</a></li>
 </ul>
 
   </nav></div>
