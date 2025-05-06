@@ -435,7 +435,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">grafik geogebranya</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi">Refleksi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi">Refleksi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repleksi-pada-2d-dua-dimensi">✅ <strong>Repleksi pada 2D (dua dimensi)</strong>:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repleksi-pada-3d-tiga-dimensi">✅ ** Repleksi pada 3D (tiga dimensi)**:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-refleksi-matriks">🔧 <strong>Aplikasi Refleksi Matriks</strong>:</a></li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -1042,9 +1047,94 @@ adalah transformasi linier.</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="refleksi">
 <h1>Refleksi<a class="headerlink" href="#refleksi" title="Link to this heading">#</a></h1>
-<p>Refleksi matriks (reflection matrix) adalah matriks transformasi yang mencerminkan (memantulkan) titik-titik dalam ruang terhadap sumbu, garis, bidang, atau titik tertentu.</p>
+<p><strong>Refleksi matriks</strong> (reflection matrix) adalah <strong>matriks transformasi</strong> yang mencerminkan (memantulkan) titik-titik dalam ruang terhadap <strong>sumbu, garis, bidang, atau titik tertentu</strong>.</p>
 <p>Refleksi mengubah arah satu atau lebih komponen vektor, seperti bayangan di cermin.</p>
-<p>Repleksi pada 2D (dua dimensi):</p>
+<hr class="docutils" />
+<section id="repleksi-pada-2d-dua-dimensi">
+<h2>✅ <strong>Repleksi pada 2D (dua dimensi)</strong>:<a class="headerlink" href="#repleksi-pada-2d-dua-dimensi" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Refleksi terhadap sumbu-x</strong>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; -1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+=
+\begin{bmatrix}
+x \\
+-y
+\end{bmatrix}
+\end{split}\]</div>
+<p>→ Membalik titik terhadap sumbu-x (nilai y dibalik, x tetap).</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Refleksi terhadap sumbu-y</strong>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+-1 &amp; 0 \\
+0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+=
+\begin{bmatrix}
+-x \\
+y
+\end{bmatrix}
+\end{split}\]</div>
+<p>→ Membalik titik terhadap sumbu-y.</p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Refleksi terhadap garis y = x</strong>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+0 &amp; 1 \\
+1 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+=
+\begin{bmatrix}
+y \\
+x
+\end{bmatrix}
+\end{split}\]</div>
+<p>→ Menukar posisi x dan y.</p>
+<hr class="docutils" />
+</section>
+<section id="repleksi-pada-3d-tiga-dimensi">
+<h2>✅ ** Repleksi pada 3D (tiga dimensi)**:<a class="headerlink" href="#repleksi-pada-3d-tiga-dimensi" title="Link to this heading">#</a></h2>
+<p>Refleksi bisa dilakukan terhadap bidang seperti <span class="math notranslate nohighlight">\(x=0\)</span>, <span class="math notranslate nohighlight">\(y=0\)</span>, atau <span class="math notranslate nohighlight">\(z=0\)</span>. Contoh refleksi terhadap bidang <span class="math notranslate nohighlight">\(x=0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+-1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<hr class="docutils" />
+</section>
+<section id="aplikasi-refleksi-matriks">
+<h2>🔧 <strong>Aplikasi Refleksi Matriks</strong>:<a class="headerlink" href="#aplikasi-refleksi-matriks" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Grafika komputer (cermin objek)</p></li>
+<li><p>Geometri transformasi</p></li>
+<li><p>Simulasi fisika (pantulan)</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1162,7 +1252,12 @@ adalah transformasi linier.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">grafik geogebranya</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi">Refleksi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi">Refleksi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repleksi-pada-2d-dua-dimensi">✅ <strong>Repleksi pada 2D (dua dimensi)</strong>:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repleksi-pada-3d-tiga-dimensi">✅ ** Repleksi pada 3D (tiga dimensi)**:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-refleksi-matriks">🔧 <strong>Aplikasi Refleksi Matriks</strong>:</a></li>
+</ul>
+</li>
 </ul>
 
   </nav></div>
