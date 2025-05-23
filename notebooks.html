@@ -189,6 +189,7 @@
 
 
 
+
 </ul>
 
     </div>
@@ -439,6 +440,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repleksi-pada-2d-dua-dimensi">✅ <strong>Repleksi pada 2D (dua dimensi)</strong>:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repleksi-pada-3d-tiga-dimensi">✅ ** Repleksi pada 3D (tiga dimensi)**:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-refleksi-matriks">🔧 <strong>Aplikasi Refleksi Matriks</strong>:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-dan-eigenvector">Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-dari-eigenvalue-dan-eigenvector">Definisi dari  Eigenvalue dan Eigenvector</a></li>
 </ul>
 </li>
 </ul>
@@ -1181,7 +1186,6 @@ x
 <img alt="_images/156aaa6ec5ee44e690619e702d242c648ff66dde6502f1f44102828a6cef625e.png" src="_images/156aaa6ec5ee44e690619e702d242c648ff66dde6502f1f44102828a6cef625e.png" />
 </div>
 </div>
-<p><img alt="image.png" src="attachment:image.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1233,7 +1237,6 @@ x
 <img alt="_images/360c1db347bb5008298ee4328a4fe2deeb7bd26990fa1f0b4a574f858b5d6906.png" src="_images/360c1db347bb5008298ee4328a4fe2deeb7bd26990fa1f0b4a574f858b5d6906.png" />
 </div>
 </div>
-<p><img alt="image.png" src="attachment:image.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1281,7 +1284,6 @@ x
 <img alt="_images/2d07bf2e06f63b3b0bd82bc99bf72895a51d91c19b88ca68119bdd2a92d889a7.png" src="_images/2d07bf2e06f63b3b0bd82bc99bf72895a51d91c19b88ca68119bdd2a92d889a7.png" />
 </div>
 </div>
-<p><img alt="image.png" src="attachment:image.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1349,7 +1351,72 @@ x
 <img alt="_images/39c32073a9bc4428febcf9136f5a2ce846f880cd360e4dd4e5dda0217a669bfb.png" src="_images/39c32073a9bc4428febcf9136f5a2ce846f880cd360e4dd4e5dda0217a669bfb.png" />
 </div>
 </div>
-<p><img alt="image.png" src="attachment:image.png" /></p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="eigenvalue-dan-eigenvector">
+<h1>Eigenvalue dan Eigenvector<a class="headerlink" href="#eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h1>
+<p><span class="math notranslate nohighlight">\(A\mathbf{v} = \lambda \mathbf{v}\)</span></p>
+<section id="definisi-dari-eigenvalue-dan-eigenvector">
+<h2>Definisi dari  Eigenvalue dan Eigenvector<a class="headerlink" href="#definisi-dari-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h2>
+<p>Nilai eigen (eigenvalue) adalah nilai skalar yang terkait dengan vektor eigen yang tetap tidak berubah arahnya setelah transformasi linear. Vektor eigen (eigenvector) adalah vektor yang arahnya tidak berubah saat transformasi linear diterapkan pada matriks, melainkan hanya mengalami perubahan skala oleh nilai eigen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
+
+<span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriks A:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Eigenvalues:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">eigenvalues</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Eigenvectors (kolom-kolomnya adalah eigenvector):</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">eigenvectors</span><span class="p">)</span>
+
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">eigenvalues</span><span class="p">)):</span>
+    <span class="n">λ</span> <span class="o">=</span> <span class="n">eigenvalues</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">eigenvectors</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]</span>
+    
+    <span class="n">Av</span> <span class="o">=</span> <span class="n">A</span> <span class="o">@</span> <span class="n">v</span>
+    <span class="n">λv</span> <span class="o">=</span> <span class="n">λ</span> <span class="o">*</span> <span class="n">v</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Verifikasi untuk eigenvalue λ = </span><span class="si">{</span><span class="n">λ</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A @ v =&quot;</span><span class="p">,</span> <span class="n">Av</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;λ * v =&quot;</span><span class="p">,</span> <span class="n">λv</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sama?&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">Av</span><span class="p">,</span> <span class="n">λv</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matriks A:
+ [[2 1]
+ [1 2]]
+
+Eigenvalues:
+ [3. 1.]
+
+Eigenvectors (kolom-kolomnya adalah eigenvector):
+ [[ 0.70710678 -0.70710678]
+ [ 0.70710678  0.70710678]]
+
+Verifikasi untuk eigenvalue λ = 3.00:
+A @ v = [2.12132034 2.12132034]
+λ * v = [2.12132034 2.12132034]
+Sama? True
+
+Verifikasi untuk eigenvalue λ = 1.00:
+A @ v = [-0.70710678  0.70710678]
+λ * v = [-0.70710678  0.70710678]
+Sama? True
+</pre></div>
+</div>
+</div>
+</div>
+<p>cari eigen value dan eigen vector dari matriks berikut:</p>
+<p><span class="math notranslate nohighlight">\(A = \begin{bmatrix}
+8 &amp; -10 \\
+5 &amp; -7
+\end{bmatrix}\)</span></p>
 </section>
 </section>
 
@@ -1472,6 +1539,10 @@ x
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repleksi-pada-2d-dua-dimensi">✅ <strong>Repleksi pada 2D (dua dimensi)</strong>:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repleksi-pada-3d-tiga-dimensi">✅ ** Repleksi pada 3D (tiga dimensi)**:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-refleksi-matriks">🔧 <strong>Aplikasi Refleksi Matriks</strong>:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-dan-eigenvector">Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-dari-eigenvalue-dan-eigenvector">Definisi dari  Eigenvalue dan Eigenvector</a></li>
 </ul>
 </li>
 </ul>
