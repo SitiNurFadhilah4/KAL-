@@ -443,7 +443,23 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-dan-eigenvector">Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-dari-eigenvalue-dan-eigenvector">Definisi dari  Eigenvalue dan Eigenvector</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-dari-eigenvalue-dan-eigenvector">Definisi dari  Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector-vektor-eigen">Eigenvector (Vektor Eigen)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-nilai-eigen">Eigenvalue (Nilai Eigen)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue-dan-eigenvector">Mencari eigenvalue dan eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-ke-1-cari-eigenvalue">Langkah ke 1 Cari Eigenvalue</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-ke-2-cari-eigenvector">Langkah ke 2 Cari Eigenvector</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-orthonormal-dan-ortogonal">definisi Orthonormal dan ortogonal</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#orthonormal">Orthonormal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ortogonal">ortogonal</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-ortonormal-dan-ortogonal">Mencari Ortonormal dan ortogonal</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1355,10 +1371,99 @@ x
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="eigenvalue-dan-eigenvector">
 <h1>Eigenvalue dan Eigenvector<a class="headerlink" href="#eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h1>
-<p><span class="math notranslate nohighlight">\(A\mathbf{v} = \lambda \mathbf{v}\)</span></p>
 <section id="definisi-dari-eigenvalue-dan-eigenvector">
 <h2>Definisi dari  Eigenvalue dan Eigenvector<a class="headerlink" href="#definisi-dari-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h2>
-<p>Nilai eigen (eigenvalue) adalah nilai skalar yang terkait dengan vektor eigen yang tetap tidak berubah arahnya setelah transformasi linear. Vektor eigen (eigenvector) adalah vektor yang arahnya tidak berubah saat transformasi linear diterapkan pada matriks, melainkan hanya mengalami perubahan skala oleh nilai eigen.</p>
+<section id="eigenvector-vektor-eigen">
+<h3>Eigenvector (Vektor Eigen)<a class="headerlink" href="#eigenvector-vektor-eigen" title="Link to this heading">#</a></h3>
+<p>Eigenvector dari sebuah matriks adalah vektor non-nol yang arah atau orientasinya tidak berubah ketika dilakukan transformasi linear oleh matriks tersebut. Yang berubah hanyalah skalanya.</p>
+</section>
+<section id="eigenvalue-nilai-eigen">
+<h3>Eigenvalue (Nilai Eigen)<a class="headerlink" href="#eigenvalue-nilai-eigen" title="Link to this heading">#</a></h3>
+<p>Eigenvalue adalah skalar yang menunjukkan berapa besar skala perubahan (perbesaran atau pengecilan) yang dialami oleh eigenvector setelah transformasi.</p>
+<p>Jika diberikan sebuah matriks persegi A dan vektor v, maka:</p>
+<p><span class="math notranslate nohighlight">\(A\mathbf{v} = \lambda \mathbf{v}\)</span></p>
+<p>Keterangan:</p>
+<p><span class="math notranslate nohighlight">\(A\)</span> = matriks persegi (n × n)</p>
+<p><span class="math notranslate nohighlight">\(v\)</span> = eigenvector (vektor kolom, v ≠ 0)</p>
+<p><span class="math notranslate nohighlight">\(\lambda\)</span> = eigenvalue</p>
+</section>
+<section id="mencari-eigenvalue-dan-eigenvector">
+<h3>Mencari eigenvalue dan eigenvector<a class="headerlink" href="#mencari-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h3>
+<p>dari matriks <span class="math notranslate nohighlight">\(A = \begin{bmatrix}
+8 &amp; 5 \\
+-10 &amp; -7
+\end{bmatrix}\)</span></p>
+<section id="langkah-ke-1-cari-eigenvalue">
+<h4>Langkah ke 1 Cari Eigenvalue<a class="headerlink" href="#langkah-ke-1-cari-eigenvalue" title="Link to this heading">#</a></h4>
+<p><span class="math notranslate nohighlight">\(\det(A - \lambda I) = 0\)</span></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow \det\left( \begin{bmatrix}
+8 - \lambda &amp; 5 \\
+-10 &amp; -7 - \lambda
+\end{bmatrix} \right) = 0\)</span></p>
+<p><span class="math notranslate nohighlight">\((8−λ)(−7−λ)−(−10)(5)=0\)</span></p>
+<p><span class="math notranslate nohighlight">\((8−λ)(−7−λ)+50=0\)</span></p>
+<p>Hitung:</p>
+<p><span class="math notranslate nohighlight">\((8 - \lambda)(-7 - \lambda) = -56 - 8\lambda + 7\lambda + \lambda^2 = \lambda^2 - \lambda - 56\)</span></p>
+<p>jadi:</p>
+<p><span class="math notranslate nohighlight">\(\lambda^2 - \lambda - 56 + 50 = 0 \Rightarrow \lambda^2 - \lambda - 6 = 0\)</span></p>
+<p>Faktorkan:</p>
+<p><span class="math notranslate nohighlight">\((\lambda - 3)(\lambda + 2) = 0\)</span></p>
+<p>eingevalue:</p>
+<p><span class="math notranslate nohighlight">\(\lambda_1 = 3\)</span></p>
+<p><span class="math notranslate nohighlight">\(\lambda_2 = -2\)</span></p>
+</section>
+<section id="langkah-ke-2-cari-eigenvector">
+<h4>Langkah ke 2 Cari Eigenvector<a class="headerlink" href="#langkah-ke-2-cari-eigenvector" title="Link to this heading">#</a></h4>
+<p><span class="math notranslate nohighlight">\(\text{Untuk } \lambda = 3:\)</span></p>
+<p><span class="math notranslate nohighlight">\(A - 3I = \begin{bmatrix}
+5 &amp; 5 \\
+-10 &amp; -10
+\end{bmatrix}\)</span></p>
+<p>Ambil Persamaan:</p>
+<p><span class="math notranslate nohighlight">\(5x - 10y = 0 \Rightarrow x = 2y \Rightarrow \mathbf{v}_1 = \begin{bmatrix} 2 \\ 1 \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{Untuk } \lambda = -2:\)</span></p>
+<p><span class="math notranslate nohighlight">\(A + 2I = \begin{bmatrix}
+10 &amp; 5 \\
+-10 &amp; -5
+\end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(10x - 10y = 0 \Rightarrow x = y \Rightarrow \mathbf{v}_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}\)</span></p>
+</section>
+<section id="hasil-akhir">
+<h4>Hasil Akhir:<a class="headerlink" href="#hasil-akhir" title="Link to this heading">#</a></h4>
+<p><span class="math notranslate nohighlight">\(\text{Eigenvalues:} \quad \lambda_1 = 3, \quad \lambda_2 = -2\)</span></p>
+<p><span class="math notranslate nohighlight">\(Eigenvectors:\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{Untuk } \lambda = 3: \quad
+\begin{bmatrix}
+2 \\
+1
+\end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{Untuk } \lambda = -2: \quad
+\begin{bmatrix}
+1 \\
+1
+\end{bmatrix}\)</span></p>
+</section>
+</section>
+<section id="definisi-orthonormal-dan-ortogonal">
+<h3>definisi Orthonormal dan ortogonal<a class="headerlink" href="#definisi-orthonormal-dan-ortogonal" title="Link to this heading">#</a></h3>
+<section id="orthonormal">
+<h4>Orthonormal<a class="headerlink" href="#orthonormal" title="Link to this heading">#</a></h4>
+<p>Suatu himpunan dikatakan ortonormal jika ortogonal dan setiap vektor adalah vektor satuan (norma sama dengan 1).
+Artinya, vektor-vektor tersebut saling tegak lurus dan memiliki panjang (norma) satu.
+Setiap himpunan ortogonal dapat dikonversi menjadi himpunan ortonormal dengan menormalisasikan setiap vektornya.</p>
+<p>Secara matematis:</p>
+<p><span class="math notranslate nohighlight">\(\mathbf{u}_i \cdot \mathbf{u}_j = 0 \quad \text{jika} \quad i \neq j \quad \text{(ortogonal)}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\| \mathbf{u}_i \| = 1 \quad \text{untuk semua } i \quad \text{(norma = 1)}\)</span></p>
+</section>
+<section id="ortogonal">
+<h4>ortogonal<a class="headerlink" href="#ortogonal" title="Link to this heading">#</a></h4>
+<p>Dua vektor dikatakan ortogonal jika sudut antara keduanya adalah 90 derajat atau π/2 radian. Secara matematis, dua vektor <span class="math notranslate nohighlight">\(\vec{u} \text{ dan } \vec{v}\)</span> adalah ortogonal jika:</p>
+<p><span class="math notranslate nohighlight">\(\vec{u} \cdot \vec{v} = 0\)</span></p>
+<p>Artinya, hasil dari dot product (perkalian titik) mereka adalah nol.</p>
+</section>
+</section>
+<section id="mencari-ortonormal-dan-ortogonal">
+<h3>Mencari Ortonormal dan ortogonal<a class="headerlink" href="#mencari-ortonormal-dan-ortogonal" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1412,11 +1517,7 @@ Sama? True
 </div>
 </div>
 </div>
-<p>cari eigen value dan eigen vector dari matriks berikut:</p>
-<p><span class="math notranslate nohighlight">\(A = \begin{bmatrix}
-8 &amp; -10 \\
-5 &amp; -7
-\end{bmatrix}\)</span></p>
+</section>
 </section>
 </section>
 
@@ -1542,7 +1643,23 @@ Sama? True
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-dan-eigenvector">Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-dari-eigenvalue-dan-eigenvector">Definisi dari  Eigenvalue dan Eigenvector</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-dari-eigenvalue-dan-eigenvector">Definisi dari  Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector-vektor-eigen">Eigenvector (Vektor Eigen)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-nilai-eigen">Eigenvalue (Nilai Eigen)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue-dan-eigenvector">Mencari eigenvalue dan eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-ke-1-cari-eigenvalue">Langkah ke 1 Cari Eigenvalue</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-ke-2-cari-eigenvector">Langkah ke 2 Cari Eigenvector</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-orthonormal-dan-ortogonal">definisi Orthonormal dan ortogonal</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#orthonormal">Orthonormal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ortogonal">ortogonal</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-ortonormal-dan-ortogonal">Mencari Ortonormal dan ortogonal</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
