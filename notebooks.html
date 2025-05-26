@@ -457,7 +457,12 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ortogonal">ortogonal</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-ortonormal-dan-ortogonal">Mencari Ortonormal dan ortogonal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-ortonormal-dan-ortogonal">Mencari Ortonormal dan ortogonal</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-ortogonal">Mencari ortogonal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-ortonormal">Mencari ortonormal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menjadikan-vektor-yang-didapat-menjadi-ortonormal-panjang-vektor-menjadi-satu-satuan">menjadikan vektor yang didapat menjadi ortonormal(panjang vektor menjadi satu satuan)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1464,6 +1469,57 @@ Setiap himpunan ortogonal dapat dikonversi menjadi himpunan ortonormal dengan me
 </section>
 <section id="mencari-ortonormal-dan-ortogonal">
 <h3>Mencari Ortonormal dan ortogonal<a class="headerlink" href="#mencari-ortonormal-dan-ortogonal" title="Link to this heading">#</a></h3>
+<section id="mencari-ortogonal">
+<h4>Mencari ortogonal<a class="headerlink" href="#mencari-ortogonal" title="Link to this heading">#</a></h4>
+<p>Sebuah matriks A adalah ortogonal jika:</p>
+<p><span class="math notranslate nohighlight">\(A^T \cdot A = I\)</span></p>
+<p>Dimana <span class="math notranslate nohighlight">\(A^T\)</span> adalah transpose dari A dan I adalah matriks identitas.</p>
+<p>Coba kita hitung:</p>
+<p><span class="math notranslate nohighlight">\(A^T = \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(A^T \cdot A =\)</span>
+<span class="math notranslate nohighlight">\(\begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}
+\cdot\)</span>
+<span class="math notranslate nohighlight">\(\begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}
+=\)</span>
+<span class="math notranslate nohighlight">\(\begin{bmatrix} 5 &amp; 4 \\ 4 &amp; 5 \end{bmatrix}\)</span></p>
+<p>Karena hasilnya bukan matriks identitas, maka A bukan matriks ortogonal.</p>
+</section>
+<section id="mencari-ortonormal">
+<h4>Mencari ortonormal<a class="headerlink" href="#mencari-ortonormal" title="Link to this heading">#</a></h4>
+<p>Syarat ortonormal:</p>
+<p>Vektor-vektor kolomnya saling ortogonal (dot product = 0)</p>
+<p>Panjang (norma) masing-masing vektor kolom = 1</p>
+<p>Kolom-kolom dari <span class="math notranslate nohighlight">\(A:\)</span></p>
+<p><span class="math notranslate nohighlight">\(v₁ = [2, 1]\)</span></p>
+<p><span class="math notranslate nohighlight">\(v₂ = [1, 2]\)</span></p>
+<p>Dot product: <span class="math notranslate nohighlight">\(2⋅1+1⋅2=4 →\)</span> tidak ortogonal</p>
+<p>Norm <span class="math notranslate nohighlight">\(v_1 : \quad \sqrt{2^2 + 1^2} = \sqrt{5} \neq 1\)</span></p>
+<p>Jadi, kolom-kolom A juga tidak ortonormal.</p>
+</section>
+<section id="menjadikan-vektor-yang-didapat-menjadi-ortonormal-panjang-vektor-menjadi-satu-satuan">
+<h4>menjadikan vektor yang didapat menjadi ortonormal(panjang vektor menjadi satu satuan)<a class="headerlink" href="#menjadikan-vektor-yang-didapat-menjadi-ortonormal-panjang-vektor-menjadi-satu-satuan" title="Link to this heading">#</a></h4>
+<p>Matriks <span class="math notranslate nohighlight">\(A\)</span> :
+<span class="math notranslate nohighlight">\(A = \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}\)</span></p>
+<p>Kolom-vektor:
+<span class="math notranslate nohighlight">\(\vec{v}_1 = \begin{bmatrix} 2 \\ 1 \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\vec{v}_2 = \begin{bmatrix} 1 \\ 2 \end{bmatrix}\)</span></p>
+<p>Langkah 1 dengan cara Normalisasi :</p>
+<p>Normalisasi dilakukan dengan:
+<span class="math notranslate nohighlight">\(\hat{v} = \frac{\vec{v}}{\|\vec{v}\|}\)</span></p>
+<p>dimana <span class="math notranslate nohighlight">\(∥v∥\)</span> adalah norma (panjang) vektor.</p>
+<p>Normalisasi <span class="math notranslate nohighlight">\(\vec{v}_1\)</span></p>
+<p><span class="math notranslate nohighlight">\(\|v_1\| = \sqrt{2^2 + 1^2} = \sqrt{5}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\hat{v}_1 = \frac{1}{\sqrt{5}} \begin{bmatrix} 2 \\ 1 \end{bmatrix} = \begin{bmatrix} \frac{2}{\sqrt{5}} \\[6pt] \frac{1}{\sqrt{5}} \end{bmatrix}\)</span></p>
+<p>Normalisasi <span class="math notranslate nohighlight">\(\vec{v}_2\)</span></p>
+<p><span class="math notranslate nohighlight">\(\|v_2\| = \sqrt{1^2 + 2^2} = \sqrt{5}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\hat{v}_2 = \frac{1}{\sqrt{5}} \begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} \frac{1}{\sqrt{5}} \\[6pt] \frac{2}{\sqrt{5}} \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(Hasil:\)</span></p>
+<p>Dua vektor ortonormal hasil normalisasi:</p>
+<p><span class="math notranslate nohighlight">\(\hat{v}_1 = \begin{bmatrix} \frac{2}{\sqrt{5}} \\[6pt] \frac{1}{\sqrt{5}} \end{bmatrix}\)</span>
+<span class="math notranslate nohighlight">\(, \hat{v}_2 = \begin{bmatrix} \frac{1}{\sqrt{5}} \\[6pt] \frac{2}{\sqrt{5}} \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(Keterangan :\)</span></p>
+<p>Panjang masing-masing vektor = 1 (sudah normal).</p>
+<p>Namun dot product keduanya <span class="math notranslate nohighlight">\(= \frac{2}{\sqrt{5}} \cdot \frac{1}{\sqrt{5}} + \frac{1}{\sqrt{5}} \cdot \frac{2}{\sqrt{5}} = \frac{4}{5} \neq 0 ,\)</span>  jadi belum saling ortogonal.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1517,6 +1573,7 @@ Sama? True
 </div>
 </div>
 </div>
+</section>
 </section>
 </section>
 </section>
@@ -1657,7 +1714,12 @@ Sama? True
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ortogonal">ortogonal</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-ortonormal-dan-ortogonal">Mencari Ortonormal dan ortogonal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-ortonormal-dan-ortogonal">Mencari Ortonormal dan ortogonal</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-ortogonal">Mencari ortogonal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-ortonormal">Mencari ortonormal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menjadikan-vektor-yang-didapat-menjadi-ortonormal-panjang-vektor-menjadi-satu-satuan">menjadikan vektor yang didapat menjadi ortonormal(panjang vektor menjadi satu satuan)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
