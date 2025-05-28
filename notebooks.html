@@ -190,6 +190,7 @@
 
 
 
+
 </ul>
 
     </div>
@@ -465,6 +466,11 @@ document.write(`
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-dari-perkalian-titik-doct-product">Definisi dari Perkalian Titik (Doct Product)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geomerti-dari-hasil-kali-titik">Geomerti Dari Hasil Kali Titik</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-satuan-mathbb-r-3">Vektor Satuan <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></a></li>
 </ul>
 </li>
 </ul>
@@ -1577,6 +1583,166 @@ Sama? True
 </section>
 </section>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="definisi-dari-perkalian-titik-doct-product">
+<h1>Definisi dari Perkalian Titik (Doct Product)<a class="headerlink" href="#definisi-dari-perkalian-titik-doct-product" title="Link to this heading">#</a></h1>
+<p>Perkalian titik (dot product) adalah operasi yang menghitung jumlah dari hasil perkalian masing-masing elemen yang bersesuaian dari dua vektor, dan menghasilkan sebuah nilai skalar.
+Untuk vektor-vektor dua dimensi v dan w, hasil kali titik (v · w) didefinisikan sebagai bilangan skalar berikut:</p>
+<p><span class="math notranslate nohighlight">\(\mathbf{v} \cdot \mathbf{w} = 
+\begin{bmatrix}
+v_1 \\
+v_2
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+w_1 \\
+w_2
+\end{bmatrix}
+= v_1w_1 + v_2w_2.\)</span></p>
+<p>Contoh Basis 2D :</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; 1
+\end{bmatrix}\)</span></p>
+<p>jadi</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 \\
+0
+\end{bmatrix}
+\)</span> . <span class="math notranslate nohighlight">\(\begin{bmatrix}
+0 \\
+1
+\end{bmatrix}\)</span> <span class="math notranslate nohighlight">\(=1.0+0.1=0\)</span></p>
+<p>gambar geogebranya:</p>
+<iframe scrolling="no" title="3" src="https://www.geogebra.org/material/iframe/id/vrhkgbdw/width/1280/height/585/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="585px" style="border:0px;"> </iframe>
+<p>contoh basis 3D :</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}\)</span></p>
+<p>Penyelesaiannya :</p>
+<p>b1.b2=</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 \\
+0 \\
+0
+\end{bmatrix}\)</span> . <span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 \\
+0 \\
+0
+\end{bmatrix}\)</span> <span class="math notranslate nohighlight">\(=(1.0)+(0.1)+(0.0)=0\)</span></p>
+<p>b1.b3=</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 \\
+0 \\
+0
+\end{bmatrix}\)</span> . <span class="math notranslate nohighlight">\(\begin{bmatrix}
+0 \\
+0 \\
+1
+\end{bmatrix}\)</span> <span class="math notranslate nohighlight">\(=(1.0)+(0.0)+(0.1)=0\)</span></p>
+<p>b2.b3=</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+0 \\
+1 \\
+0
+\end{bmatrix}\)</span> . <span class="math notranslate nohighlight">\(\begin{bmatrix}
+0 \\
+0 \\
+1
+\end{bmatrix}\)</span> <span class="math notranslate nohighlight">\(=(0.0)+(1.0)+(0.1)=0\)</span></p>
+<p>gambar geogebranya:</p>
+<iframe scrolling="no" title="3" src="https://www.geogebra.org/material/iframe/id/vrhkgbdw/width/1280/height/585/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="585px" style="border:0px;"> </iframe>
+<section id="geomerti-dari-hasil-kali-titik">
+<h2>Geomerti Dari Hasil Kali Titik<a class="headerlink" href="#geomerti-dari-hasil-kali-titik" title="Link to this heading">#</a></h2>
+<p>Hasil kali titik didefinisikan, secara umum, untuk dua vektor berdimensi <span class="math notranslate nohighlight">\(𝑚\)</span> sebagai berikut:</p>
+<p><span class="math notranslate nohighlight">\(\mathbf{v} \cdot \mathbf{w} = 
+\begin{bmatrix}
+v_1 \\
+v_2 \\
+\vdots \\
+v_m
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+w_1 \\
+w_2 \\
+\vdots \\
+w_m
+\end{bmatrix}
+= v_1w_1 + v_2w_2 + \ldots + v_mw_m.\)</span></p>
+<p><span class="math notranslate nohighlight">\(Contoh\)</span></p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+3\\
+4 \\
+-1 \\
+0
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+1 \\
+1\\
+2 \\
+3
+\end{bmatrix}\)</span>
+<span class="math notranslate nohighlight">\(=
+3.(1) + 4.(1) + (-1).(2) + 0.(3)
+= (3) + 4 + (-2) + 0 = 5\)</span></p>
+</section>
+<section id="vektor-satuan-mathbb-r-3">
+<h2>Vektor Satuan <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span><a class="headerlink" href="#vektor-satuan-mathbb-r-3" title="Link to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\(Contoh\)</span></p>
+<p>Misalkan diberikan titik berikut:</p>
+<p><span class="math notranslate nohighlight">\(A= (0,0)\)</span></p>
+<p><span class="math notranslate nohighlight">\(B= (3,0)\)</span></p>
+<p><span class="math notranslate nohighlight">\(D= (3,2)\)</span></p>
+<p><span class="math notranslate nohighlight">\(C= (3,4)\)</span></p>
+<p>Vektor : <span class="math notranslate nohighlight">\(u= AB \begin{bmatrix}
+3 \\
+0
+\end{bmatrix}\)</span></p>
+<p>Vektor : <span class="math notranslate nohighlight">\(a= AD \begin{bmatrix}
+3 \\
+2
+\end{bmatrix}\)</span></p>
+<p>Vektor : <span class="math notranslate nohighlight">\(u= AC \begin{bmatrix}
+3 \\
+4
+\end{bmatrix}\)</span></p>
+<p>Panjang Vektor</p>
+<p><span class="math notranslate nohighlight">\(\|\vec{v}\| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25}
+\qquad
+\|\vec{a}\| = \sqrt{3^2 + 2^2} = \sqrt{9 + 4} = \sqrt{13}
+\qquad
+\|\vec{u}\| = \sqrt{3^2 + 0^2} = \sqrt{9}\)</span></p>
+<p>Sudut antara vektor <span class="math notranslate nohighlight">\(u\)</span> dan <span class="math notranslate nohighlight">\(a\)</span></p>
+<p>menggunakan rumus dot product</p>
+<p><span class="math notranslate nohighlight">\(\cos \theta = \frac{\vec{u} \cdot \vec{a}}{\|\vec{u}\| \|\vec{a}\|}\)</span></p>
+<p><span class="math notranslate nohighlight">\(Penyelesaian\)</span></p>
+<p><span class="math notranslate nohighlight">\(\theta \approx 33.69^\circ \qquad
+\cos \theta = \frac{9}{3\sqrt{13}} = \frac{3}{\sqrt{13}} 
+\Rightarrow \theta = \cos^{-1} \left( \frac{3}{\sqrt{13}} \right)
+\qquad
+\vec{u} \cdot \vec{a} = (3)(3) + (0)(2) = 9\)</span></p>
+<p>vektor satuan <span class="math notranslate nohighlight">\(v :\)</span></p>
+<p><span class="math notranslate nohighlight">\(\hat{v} = \frac{\vec{v}}{\|\vec{v}\|} = \frac{1}{5} 
+\begin{bmatrix}
+3 \\
+4
+\end{bmatrix} = 
+\begin{bmatrix}
+\frac{3}{5} \\
+\frac{4}{5}
+\end{bmatrix}\)</span></p>
+<p>Panjang vektor satuan :</p>
+<p><span class="math notranslate nohighlight">\(\|\hat{v}\| = \sqrt{ \left( \frac{3}{5} \right)^2 + \left( \frac{4}{5} \right)^2 }
+= \sqrt{ \frac{9}{25} + \frac{16}{25} }
+= \sqrt{ \frac{25}{25} }
+= \sqrt{1}
+= 1\)</span></p>
+<iframe scrolling="no" title="5" src="https://www.geogebra.org/material/iframe/id/dm6utnf6/width/1280/height/585/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="585px" style="border:0px;"> </iframe>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1722,6 +1888,11 @@ Sama? True
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-dari-perkalian-titik-doct-product">Definisi dari Perkalian Titik (Doct Product)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geomerti-dari-hasil-kali-titik">Geomerti Dari Hasil Kali Titik</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-satuan-mathbb-r-3">Vektor Satuan <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></a></li>
 </ul>
 </li>
 </ul>
